@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Rammetto+One&family=Lalezar&family=Didact+Gothic&family=Marcellus+SC&family=Poppins:wght@300;400&family=Rowdies:wght@300;400;700&family=Workbench&display=swap');
+
+.heading{
+    z-index: 5;
+    position: absolute;
+    top: 0vh; 
+    left: 50vw;
+    color: yellow; 
+    font-family: 'rammetto one';
+    
+}
+.vertical-text{
+    padding: 10vh 0;
+    font-size: x-large;
+    font-weight:bolder;
+    font-family: 'rammetto one';
+    color: rgb(90, 9, 9);
+    background-image: url(../assets/yellow.jpeg);
+}
+.landing-page{
+    display: grid;
+    background-color:rgb(90, 9, 9); 
+    grid-template-columns: 10vw 90vw;
+}
+.bg1{
+    position:relative;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+.content{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 10vw 40vw 20vw 25vw;
+    height: 40vh;
+
+}
+
+.insta-logo{
+    height:40%;
+}
+
+.mascot{
+    height: 34vh;
+    /* background-color: black; */
+}
+.block2{
+    align-content: center;
+    margin: 2vh;
+    margin-left: 2vw;
+    border-radius: 20px;
+    color: white;
+    height: 30vh;
+    font-size:x-large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:orange ;
+
+}
+.block3{
+    border-radius: 20px;
+    margin: 2vh;
+    align-content: center;
+
+    background-color: orange;
+    height: 30vh;
+
+}
+.block4{
+    border-radius: 20px;
+    margin: 2vh;
+    align-content: center;
+    background-image: url(../assets/swirl.jpg);
+    height: 30vh;
+    color: white;
+
+}
+
+footer{
+    text-align: left;
+    background-color: yellow;
+    height: 20vh;
+    padding: 2vh;
+}
+footer h3{
+    margin: 0;
+    background-color: orange;
+    border-radius: 15px;
+    width: 8vw;
+    padding: 2vh;
+    color: white;
+}
