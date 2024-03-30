@@ -31,7 +31,7 @@
 .content{
     text-align: center;
     display: grid;
-    grid-template-columns: 10vw 40vw 20vw 25vw;
+    grid-template-columns: 10vw 40vw 20vw 28vw;
     height: 40vh;
 
 }
@@ -46,7 +46,7 @@
 }
 .block2{
     align-content: center;
-    margin: 2vh;
+    margin: 2.5vh;
     margin-left: 2vw;
     border-radius: 20px;
     color: white;
@@ -58,7 +58,7 @@
 }
 .block3{
     border-radius: 20px;
-    margin: 2vh;
+    margin: 2.5vh;
     align-content: center;
 
     background-color: orange;
@@ -67,7 +67,7 @@
 }
 .block4{
     border-radius: 20px;
-    margin: 2vh;
+    margin: 2.5vh;
     align-content: center;
     background-image: url(../assets/swirl.jpg);
     height: 30vh;
