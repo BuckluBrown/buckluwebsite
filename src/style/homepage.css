@@ -42,6 +42,7 @@
 
 .mascot{
     height: 34vh;
+    width: fit-content;
     /* background-color: black; */
 }
 .block2{
@@ -72,6 +73,8 @@
     background-image: url(../assets/swirl.jpg);
     height: 30vh;
     color: white;
+    font-size: large ;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 
