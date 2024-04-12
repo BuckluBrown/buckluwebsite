@@ -41,17 +41,9 @@
     height: 70vh;
     top: 2.5vh;
     position: relative;
-    animation: fly 2.5s ease-in-out infinite;
 }
 
-@keyframes fly {
-  0% {top: 5vh;}
-  50%{top:-5vh ;}
-  /* 20%{top:10vh;}
-  40% {top: 10vh;}
-  60%{ top:40vh;} */
-  100% {top:5vh}
-}
+
 .bg1{
     position:relative;
     width: 100%;
@@ -121,4 +113,45 @@ footer h3{
     border-radius: 15px;
     padding: 2vh;
     color: white;
+}
+
+/* Media Queries for Mobile */
+@media only screen and (max-width: 768px) {
+    .mascot-container {
+        height: 60vh;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+    .bg{
+        display: none;
+    }
+
+    .brown-typo {
+        transform: translateX(-10vh);
+    }
+    .brown-typo-text1{
+        height: 20vh;
+
+    }
+
+    .brown-typo-text2 {
+        font-size: medium;
+    }
+
+    .block1, .block2, .block3 {
+        height: auto;
+        font-size: medium;
+    }
+    .block1,.block2,.block3{
+        background-size:auto;
+        background-position: center;
+    }
+    .block2{
+        background-position: -60vw;
+    }
+
+
+    footer {
+        height: auto;
+    }
 }
