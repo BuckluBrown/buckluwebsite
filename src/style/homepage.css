@@ -19,15 +19,17 @@
 
     font-family: 'lalezar';
     font-weight: bold;
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 30vw 40vw 10vw;
     height: 75vh;
     align-items: center;}
 
 
 .brown-typo{
-    width: min-content;
+    /* width: min-content; */
     text-align: center;
-    transform: translateX(13vw);
+    /* transform: translateX(13vw); */
 }
 .brown-typo-text1{
     height: 20vh;
@@ -83,13 +85,13 @@
 }
 
 .pkg1{
-    transform: translateX(18vw);
+    /* transform: translateX(18vw); */
     animation: shake 2s ease-in 3;
 }
 @keyframes shake {
-    0%, 100% {transform: translateX(16vw) rotate(-1deg);}
-    50% {transform: translateX(18vw) rotate(-3deg);}
-    80% {transform: translateX(18vw) rotate(3deg);}
+    0%, 100% {transform: translateX(-2vw) rotate(-1deg);}
+    50% {transform: translateX(0vw) rotate(-3deg);}
+    80% {transform: translateX(0vw) rotate(3deg);}
 }
 .content{
     text-align: center;
