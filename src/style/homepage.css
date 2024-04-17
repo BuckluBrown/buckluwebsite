@@ -6,35 +6,67 @@
     font-style: normal;
   }
 .container{
-    background-color: #9d6f5a;
+    background-color: #7c4329;
 }
 
 .bg{
     position: absolute;
     width: 100%;
-    opacity: 15%;
+    opacity: 5%;
 }
 .mascot-container{
     overflow: hidden;
 
-    font-family: 'comicy';
+    font-family: 'lalezar';
+    font-weight: bold;
     display: flex;
     height: 75vh;
     align-items: center;}
+
+
 .brown-typo{
     width: min-content;
     text-align: center;
-    transform: translateX(18vw);
+    transform: translateX(13vw);
 }
 .brown-typo-text1{
-    height: 25vh;
+    height: 20vh;
+    animation: stomp 1.5s ease-in 1;
 }
-.brown-typo-text2{
-    font-size: xx-large;
+@keyframes stomp{
+    0%   {transform: translateY(-30vh)}
+    40%  {transform: translateY(3vh)}
+    75%{transform: translateY(2vh)}
+    90%{transform: translateY(3vh)}
+    100% {transform: translateY(2vh)}
+}
+
+.jaggery-text h1{
+    margin: 0;
     line-height: 8vh;
-    letter-spacing: 0.4vw;
+    /* letter-spacing: 0.4vw; */
     /* color: #442618; */
     color: bisque;
+    animation: stomp2 1.5s 0.6s 1;
+}
+@keyframes stomp2{
+    0%   {transform: translateY(2vh)}
+    40%  {transform: translateY(3vh)}
+    75%{transform: translateY(2vh)}
+    90%{transform: translateY(3vh)}
+    100% {transform: translateY(2vh)}
+}
+.j1{
+    font-size: 10vh;
+}
+.j2{
+    font-size: 12vh;
+}
+.j3{
+    font-size: 8vh;
+}
+.j4{
+    font-size: 10vh;
 }
 .mascot2{
     z-index: 1;
@@ -43,18 +75,28 @@
     position: relative;
 }
 
-
 .bg1{
     position:relative;
     width: 100%;
     z-index: 1;
     top: 0;
 }
+
+.pkg1{
+    transform: translateX(18vw);
+    animation: shake 2s ease-in 3;
+}
+@keyframes shake {
+    0%, 100% {transform: translateX(16vw) rotate(-1deg);}
+    50% {transform: translateX(18vw) rotate(-3deg);}
+    80% {transform: translateX(18vw) rotate(3deg);}
+}
 .content{
     text-align: center;
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.4%;
     height: 40vh;
+    margin: 0 3vw;
 
 }
 
@@ -68,52 +110,69 @@
     /* background-color: black; */
 }
 .block1, .block2, .block3{
+    border-radius: 30px;
+    border: 1vh solid #9c522f;
+    border-top: none;
+    margin: 0 0.5vw;
     z-index: 2;
     align-content: center;
-    color: white;
-    height: 35vh;
+    color: #442618;
+    height: 25vh;
     font-size:x-large;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* background-color: #d0ab90; */
+    background-color: bisque;
+    font-family: 'rammetto one';
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
-/* .block1 h1, .block2 h1, .block3 h1{
-    animation:swipe 5s linear infinite;}
-@keyframes swipe {
-    0%, 100% {transform: translateY(0);}
-    50% {transform: translateY(-20vh);}
-} */
+.block1 h1, .block2 h1, .block3 h1{
+    margin: 0;
+    animation: big 2s 3s ease-in-out 3;
+}
+@keyframes big {
+    0%, 100% {transform: scale(1);transform: translateY(-2vh);}
+    50% {transform: scale(1.5);transform: translateY(2vh)}
+}
 
-.block1{
-    background-image:url(../assets/mix3.gif) ;
-    background-size: cover;
-    /* background-color:orange ; */
+.block1 h2, .block2 h2, .block3 h2{
+        margin: 0;}
+    
+/* Hover effect for the blocks */
+.block1:hover, .block2:hover, .block3:hover{
+    box-shadow: inset -7px -7px 10px rgba(0,0,0,.5), inset 7px 7px 10px rgba(255,255,255,.5);
+    transform: translateY(-7px);
+    transition: all .5s ease-in-out;
 }
-.block2{
-    /* background-color: brown; */
-    background-image: url(../assets/sip2.gif);
-    /* background-position:4vw; */
-    background-size: cover;
 
-}
-.block3{
-    background-image: url(../assets/fly1.gif);
-    /* background-color: chocolate; */
-    background-position: center;
-    background-size: cover;
+.block1:active, .block2:active, .block3:active{
+    top: 7px;
+    left: 7px;
+    right: 7px;
+    bottom: 7px;
+    transform: translateY(0) rotateZ(180deg);
+    transition: all .5s ease-in-out;
 }
 
 footer{
-    text-align: left;
-    height: 20vh;
+    align-items: center;
+    text-align: center;
     padding: 2vh;
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
 }
-footer h3{
+.sk1,.sk2{
+    height: 20vh;
+}
+footer h3, footer h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: relative;
-    float: right;
     margin: 0;
     border-radius: 15px;
-    padding: 2vh;
+    padding: 1vh;
     color: white;
 }
+/* footer h3{
+    font-family: 'lalezar';
+} */
 
 /* Media Queries for Mobile */
 @media only screen and (max-width: 768px) {
